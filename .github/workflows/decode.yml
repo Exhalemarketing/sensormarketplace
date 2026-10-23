@@ -1,0 +1,25 @@
+name: decode-images
+on:
+  push:
+    paths: ["img-b64/**"]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  decode:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Decode base64 images into img/
+        run: |
+          mkdir -p img
+          for f in img-b64/*.b64; do base64 -d "$f" > "img/$(basename "$f" .b64)"; done
+          ls -la img
+      - name: Commit decoded images
+        run: |
+          git config user.name "sensormarketplace-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add img
+          git diff --cached --quiet || git commit -m "Decode images"
+          git pull --rebase || true
+          git push
