@@ -17,10 +17,10 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0A2540">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="style.css?v=202610231305">
+<link rel="preload" href="img/inter-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css?v=202610231313">
+<link rel="preload" as="image" href="img/hero-plant-dusk-800.webp" media="(max-width:800px)">
+<link rel="preload" as="image" href="img/hero-plant-dusk-1600.webp" media="(min-width:801px)">
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://exhalemarketing.github.io/sensormarketplace/#org", "name": "SensorMarketplace.com", "url": "https://exhalemarketing.github.io/sensormarketplace/", "logo": "https://exhalemarketing.github.io/sensormarketplace/favicon.svg", "description": "Replacement gas sensor cartridges and exact-spec OEM industrial sensors sourced to order from part numbers or specs for plants and facilities; supplier ships direct."}, {"@type": "WebSite", "name": "SensorMarketplace.com", "url": "https://exhalemarketing.github.io/sensormarketplace/"}, {"@type": "Service", "name": "OEM replacement sensor sourcing (part number lookup)", "serviceType": "Industrial sensor sourcing and drop-ship fulfillment", "provider": {"@id": "https://exhalemarketing.github.io/sensormarketplace/#org"}, "areaServed": "Worldwide", "url": "https://exhalemarketing.github.io/sensormarketplace/#quote", "description": "Send an OEM part number or exact specs; a matching unit is sourced from suppliers and shipped direct.", "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Sensor categories", "itemListElement": [{"@type": "OfferCatalog", "name": "Replacement H2S and CO gas sensor cartridges (Honeywell XNX, MSA Ultima X, Dräger Polytron)"}, {"@type": "OfferCatalog", "name": "Vibration and predictive-maintenance sensors (Wilcoxon 786A, Wilcoxon PC420, CTC AC102, Bently Nevada 3300 XL)"}, {"@type": "OfferCatalog", "name": "Fixed gas and VOC transmitters (Honeywell XNX, MSA Ultima X5000, Dräger Polytron 8000, RKI M2A-XL)"}, {"@type": "OfferCatalog", "name": "Refrigerant leak-detection modules (Bacharach MGS-400 series)"}, {"@type": "OfferCatalog", "name": "OEM replacement sensor heads and modules, including discontinued parts"}]}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Our Honeywell XNX H2S cartridge is at end of life. Can you supply the exact replacement?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Send the cartridge part number from the label (for example XNXXSH2SS, the H2S cartridge for XNX) or the transmitter model, gas and range. We quote the exact Honeywell cartridge and confirm availability and lead time with the supplier first. The same applies to MSA Ultima X / X5000 sensor modules and Dräger Polytron sensors."}}, {"@type": "Question", "name": "How often do H2S and CO sensor cartridges need replacing?", "acceptedAnswer": {"@type": "Answer", "text": "Electrochemical H2S and CO sensors typically last about 2–3 years. Actual life depends on the gas, temperature, humidity and exposure, and on the manufacturer's stated life. A sensor that fails calibration or shows an end-of-life fault should be replaced with the part specified by the transmitter manufacturer."}}, {"@type": "Question", "name": "Failed Wilcoxon 786A accelerometer or Bently Nevada 3300 XL probe. Can you match it exactly?", "acceptedAnswer": {"@type": "Answer", "text": "Send the part number from the sensor or cable. Accelerometers are matched on sensitivity (e.g. 100 mV/g), frequency response, connector and mounting thread. Bently Nevada 3300 XL proximity systems are matched on probe, extension cable and Proximitor sensor so that total system length and calibration stay correct. Spec-equivalents (e.g. CTC AC102 for a general-purpose 100 mV/g accelerometer) are only offered when you ask, and they are labelled as equivalents."}}, {"@type": "Question", "name": "The sensor or transmitter has been discontinued. What now?", "acceptedAnswer": {"@type": "Answer", "text": "Discontinued part? Send us the number and we'll source a matching or direct replacement. We check for the manufacturer's successor part (for example a newer cartridge or sensor module), remaining stock, or a spec-equivalent, and state clearly which one is quoted."}}, {"@type": "Question", "name": "How fast will I get a quote, and how do I pay?", "acceptedAnswer": {"@type": "Answer", "text": "We typically reply with a quote within a few hours during business hours. For common cartridges and standard models we can often respond faster. The quote arrives by email. No payment is taken on the website: if you accept, you pay via a payment link or invoice we send, then we order from the supplier."}}, {"@type": "Question", "name": "Do you hold stock? Who ships, and what do I get with the quote?", "acceptedAnswer": {"@type": "Answer", "text": "No stock. Each request is sourced from authorized or specialist industrial suppliers. The quote states manufacturer, part number, whether it is OEM or a labeled equivalent, lead time and price. Pricing, availability and technical suitability are confirmed with the supplier before any order. After payment we order from the supplier, and the supplier ships direct to your delivery location."}}]}]}</script>
 </head>
 <body>
@@ -37,22 +37,59 @@
   <div class="wrap hero-grid">
     <div class="hero-copy">
       <h1>Exact-Spec OEM Industrial Sensor Replacements</h1>
-      <p class="lead">Send the part number. We confirm price, lead time and fit with the supplier and email you a quote. The supplier ships direct to your site.</p>
-      <ul class="facts" aria-label="What we source">
-        <li><b>Gas sensor cartridges</b> H₂S &amp; CO for Honeywell XNX, MSA Ultima X, Dräger Polytron</li>
-        <li><b>Vibration</b> Wilcoxon 786A, Bently Nevada 3300 XL</li>
-        <li><b>Fixed gas / VOC</b> transmitters &amp; sensor heads</li>
-        <li><b>Refrigerant</b> Bacharach MGS-400 modules</li>
-      </ul>
+      <p class="voice">Send the number. We’ll find the part.</p>
+      <p class="lead">Replacement H₂S and CO cartridges for Honeywell XNX, MSA Ultima X and Dräger Polytron, plus vibration sensors and fixed transmitters.<span class="lead-more"> We confirm price, lead time and fit with the supplier and email you a quote. The supplier ships direct to your site.</span></p>
+      <figure class="bp-fig" aria-hidden="true">
+      <svg class="bp" viewBox="0 0 560 300" width="560" height="300" role="presentation" focusable="false">
+        <defs>
+          <marker id="ar" viewBox="0 0 8 8" refX="4" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 1 L7 4 L0 7" fill="none" stroke="currentColor" stroke-width="1.2"/></marker>
+        </defs>
+        <g class="ln">
+          <!-- fixed gas transmitter -->
+          <rect x="40" y="40" width="150" height="120" rx="10"/>
+          <rect x="62" y="60" width="106" height="46" rx="4"/>
+          <circle cx="80" cy="132" r="7"/><circle cx="104" cy="132" r="7"/><circle cx="150" cy="132" r="9"/>
+          <rect x="22" y="78" width="18" height="24" rx="2"/><rect x="190" y="78" width="18" height="24" rx="2"/>
+          <rect x="88" y="160" width="54" height="16"/>
+          <path d="M84 176 h62 v58 a6 6 0 0 1 -6 6 h-50 a6 6 0 0 1 -6 -6 z"/>
+          <path d="M90 240 h50" class="dash"/>
+          <!-- sensor cartridge, exploded -->
+          <rect x="340" y="70" width="110" height="140" rx="8"/>
+          <path d="M340 100 h110 M340 186 h110"/>
+          <rect x="356" y="116" width="78" height="54" rx="3" class="acc"/>
+          <path d="M352 210 h86 v18 a4 4 0 0 1 -4 4 h-78 a4 4 0 0 1 -4 -4 z"/>
+          <path d="M362 228 h66" class="dash"/>
+          <path d="M150 208 C 230 208, 260 150, 336 150" class="dash"/>
+        </g>
+        <g class="dim">
+          <path d="M40 22 H190" marker-start="url(#ar)" marker-end="url(#ar)"/><path d="M40 16 v12 M190 16 v12"/>
+          <path d="M472 70 V232" marker-start="url(#ar)" marker-end="url(#ar)"/><path d="M466 70 h12 M466 232 h12"/>
+          <path d="M168 84 L250 84"/><path d="M140 232 L250 262"/><path d="M450 92 L492 70 H548"/>
+        </g>
+        <g class="tx">
+          <text x="115" y="14" text-anchor="middle">TRANSMITTER · MODEL ON NAMEPLATE</text>
+          <text x="254" y="88">DISPLAY · 4–20 mA</text>
+          <text x="254" y="266">SENSOR HEAD</text>
+          <text x="548" y="64" text-anchor="end">P/N ON LABEL</text>
+          <text x="395" y="58" text-anchor="middle">SENSOR CARTRIDGE</text>
+          <text x="395" y="139" text-anchor="middle" class="acc-t">H₂S</text>
+            <text x="395" y="156" text-anchor="middle" class="acc-t">0–100 ppm</text>
+          <text x="488" y="112" class="v" transform="rotate(90 488 112)">EXACT MATCH</text>
+        </g>
+      </svg>
+      <figcaption>Illustrative drawing – not to scale.</figcaption>
+      </figure>
       <ul class="trust" aria-label="How quoting works">
         <li>Quote-based sourcing – not a browse-and-buy catalog</li>
         <li>Exact OEM part, or an equivalent clearly labeled as one</li>
         <li>No account, no obligation – no payment on this form</li>
         <li>We typically reply with a quote within a few hours during business hours.</li>
+        <li><b>Discontinued part? Send us the number and we’ll source a matching or direct replacement.</b></li>
       </ul>
     </div>
 
-    <div class="qcard" id="quote" tabindex="-1">
+    <div class="qcard plate" id="quote" tabindex="-1">
+      <div class="plate-head" aria-hidden="true"><span>Quote request</span><span class="mono">SM · RFQ</span></div>
       <form id="quoteForm" class="qf" action="#quote" data-endpoint="https://formsubmit.co/3a2795173671258cb2cb5c7063ffe1da" method="POST" novalidate aria-labelledby="qf-title">
         <h2 id="qf-title" class="qf-title">Get a quote by part number</h2>
         <input type="hidden" name="_subject" id="subj" value="New quote request – SensorMarketplace.com">
@@ -70,7 +107,7 @@
         <div id="formErr" class="errsum" role="alert" tabindex="-1" hidden></div>
 
         <div class="seg" role="group" aria-label="How will you identify the sensor?">
-          <button type="button" class="seg-btn" id="modePn" aria-pressed="true">I have the part number</button>
+          <button type="button" class="seg-btn" id="modePn" aria-pressed="true">Part number</button>
           <button type="button" class="seg-btn" id="modeDesc" aria-pressed="false">No part number</button>
         </div>
 
@@ -103,7 +140,7 @@
           <input id="countryOther" name="Ship-to country (other)" maxlength="60" autocomplete="country-name" aria-describedby="countryOther-err"><p class="ferr" id="countryOther-err" hidden></p></div>
         <div class="row two keep2">
           <div class="field"><label for="state">State / province <span class="req" aria-hidden="true">*</span></label>
-            <select id="state" name="Ship-to state/province" autocomplete="address-level1" aria-describedby="state-err"><option value="">Country first</option><optgroup label="United States" data-country="United States"><option>Alabama</option><option>Alaska</option><option>Arizona</option><option>Arkansas</option><option>California</option><option>Colorado</option><option>Connecticut</option><option>Delaware</option><option>District of Columbia</option><option>Florida</option><option>Georgia</option><option>Hawaii</option><option>Idaho</option><option>Illinois</option><option>Indiana</option><option>Iowa</option><option>Kansas</option><option>Kentucky</option><option>Louisiana</option><option>Maine</option><option>Maryland</option><option>Massachusetts</option><option>Michigan</option><option>Minnesota</option><option>Mississippi</option><option>Missouri</option><option>Montana</option><option>Nebraska</option><option>Nevada</option><option>New Hampshire</option><option>New Jersey</option><option>New Mexico</option><option>New York</option><option>North Carolina</option><option>North Dakota</option><option>Ohio</option><option>Oklahoma</option><option>Oregon</option><option>Pennsylvania</option><option>Rhode Island</option><option>South Carolina</option><option>South Dakota</option><option>Tennessee</option><option>Texas</option><option>Utah</option><option>Vermont</option><option>Virginia</option><option>Washington</option><option>West Virginia</option><option>Wisconsin</option><option>Wyoming</option><option>Puerto Rico</option></optgroup><optgroup label="Canada" data-country="Canada"><option>Alberta</option><option>British Columbia</option><option>Manitoba</option><option>New Brunswick</option><option>Newfoundland and Labrador</option><option>Northwest Territories</option><option>Nova Scotia</option><option>Nunavut</option><option>Ontario</option><option>Prince Edward Island</option><option>Quebec</option><option>Saskatchewan</option><option>Yukon</option></optgroup><optgroup label="Mexico" data-country="Mexico"><option>Aguascalientes</option><option>Baja California</option><option>Baja California Sur</option><option>Campeche</option><option>Chiapas</option><option>Chihuahua</option><option>Ciudad de México</option><option>Coahuila</option><option>Colima</option><option>Durango</option><option>Estado de México</option><option>Guanajuato</option><option>Guerrero</option><option>Hidalgo</option><option>Jalisco</option><option>Michoacán</option><option>Morelos</option><option>Nayarit</option><option>Nuevo León</option><option>Oaxaca</option><option>Puebla</option><option>Querétaro</option><option>Quintana Roo</option><option>San Luis Potosí</option><option>Sinaloa</option><option>Sonora</option><option>Tabasco</option><option>Tamaulipas</option><option>Tlaxcala</option><option>Veracruz</option><option>Yucatán</option><option>Zacatecas</option></optgroup><option value="N/A (outside US/CA/MX)" data-other="1" hidden>Not applicable</option></select><p class="ferr" id="state-err" hidden></p></div>
+            <select id="state" name="Ship-to state/province" autocomplete="address-level1" aria-describedby="state-err" disabled><option value="">Country first</option><optgroup label="United States" data-country="United States"><option>Alabama</option><option>Alaska</option><option>Arizona</option><option>Arkansas</option><option>California</option><option>Colorado</option><option>Connecticut</option><option>Delaware</option><option>District of Columbia</option><option>Florida</option><option>Georgia</option><option>Hawaii</option><option>Idaho</option><option>Illinois</option><option>Indiana</option><option>Iowa</option><option>Kansas</option><option>Kentucky</option><option>Louisiana</option><option>Maine</option><option>Maryland</option><option>Massachusetts</option><option>Michigan</option><option>Minnesota</option><option>Mississippi</option><option>Missouri</option><option>Montana</option><option>Nebraska</option><option>Nevada</option><option>New Hampshire</option><option>New Jersey</option><option>New Mexico</option><option>New York</option><option>North Carolina</option><option>North Dakota</option><option>Ohio</option><option>Oklahoma</option><option>Oregon</option><option>Pennsylvania</option><option>Rhode Island</option><option>South Carolina</option><option>South Dakota</option><option>Tennessee</option><option>Texas</option><option>Utah</option><option>Vermont</option><option>Virginia</option><option>Washington</option><option>West Virginia</option><option>Wisconsin</option><option>Wyoming</option><option>Puerto Rico</option></optgroup><optgroup label="Canada" data-country="Canada"><option>Alberta</option><option>British Columbia</option><option>Manitoba</option><option>New Brunswick</option><option>Newfoundland and Labrador</option><option>Northwest Territories</option><option>Nova Scotia</option><option>Nunavut</option><option>Ontario</option><option>Prince Edward Island</option><option>Quebec</option><option>Saskatchewan</option><option>Yukon</option></optgroup><optgroup label="Mexico" data-country="Mexico"><option>Aguascalientes</option><option>Baja California</option><option>Baja California Sur</option><option>Campeche</option><option>Chiapas</option><option>Chihuahua</option><option>Ciudad de México</option><option>Coahuila</option><option>Colima</option><option>Durango</option><option>Estado de México</option><option>Guanajuato</option><option>Guerrero</option><option>Hidalgo</option><option>Jalisco</option><option>Michoacán</option><option>Morelos</option><option>Nayarit</option><option>Nuevo León</option><option>Oaxaca</option><option>Puebla</option><option>Querétaro</option><option>Quintana Roo</option><option>San Luis Potosí</option><option>Sinaloa</option><option>Sonora</option><option>Tabasco</option><option>Tamaulipas</option><option>Tlaxcala</option><option>Veracruz</option><option>Yucatán</option><option>Zacatecas</option></optgroup><option value="N/A (outside US/CA/MX)" data-other="1" hidden>Not applicable</option></select><p class="ferr" id="state-err" hidden></p></div>
           <div class="field"><label for="city">City / ZIP <span class="req" aria-hidden="true">*</span></label>
             <input id="city" name="Ship-to city / ZIP" maxlength="80" autocomplete="postal-code" placeholder="e.g. Houston 77002" aria-describedby="city-err"><p class="ferr" id="city-err" hidden></p></div>
         </div>
@@ -144,13 +181,16 @@
 
     </div>
   </div>
+  <p class="wrap photo-credit">Photo: Wesseling refinery at dusk, Martin Falbisoner, <a href="https://commons.wikimedia.org/wiki/File:Wesseling_Refinery_at_Dusk,_March_2018.jpg" rel="nofollow">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="nofollow">CC BY-SA 4.0</a> (resized, darkened).</p>
 </section>
 
 <section id="cartridges" class="sec feature">
   <div class="wrap feat-grid">
     <div>
       <p class="eyebrow">Most-requested replacement</p>
+      <div class="caltag" aria-hidden="true"><span class="caltag-h">Calibration due</span><span class="mono">REPLACE CARTRIDGE · CHECK DATE</span></div>
       <h2>Replacement gas sensor cartridges: H₂S &amp; CO</h2>
+      <p class="voice-dark">A detector with an expired cartridge isn’t protecting anyone.</p>
       <p>Electrochemical toxic-gas sensors wear out. They typically need replacing every 2–3 years, depending on gas, environment and exposure. We source exact-match H₂S and CO cartridges and sensor modules for the most widely installed fixed gas transmitters:</p>
       <ul class="models">
         <li><b>Honeywell XNX</b> – H₂S and CO smart sensor cartridges (e.g. <span class="pn">XNXXSH2SS</span> H₂S, <span class="pn">XNXXSC1SS</span> CO)</li>
@@ -160,6 +200,45 @@
       <a class="btn ghost js-quote" href="#quote" data-type="Replacement gas sensor cartridge">Quote a replacement cartridge</a>
     </div>
     <img src="img/oem-replacement-sensor-head.webp" width="540" height="720" loading="lazy" decoding="async" alt="Replacement electrochemical gas sensor cell">
+  </div>
+</section>
+
+<section id="need" class="sec need">
+  <div class="wrap need-grid">
+    <div class="need-box">
+      <div class="need-col">
+        <h2 class="h3">What we need</h2>
+        <ul class="ticks">
+          <li>OEM part number <span class="muted">– or manufacturer, sensor type and a short description</span></li>
+          <li>Quantity</li>
+          <li>Ship-to country, state and city / ZIP</li>
+          <li>Your name and email</li>
+        </ul>
+      </div>
+      <div class="need-col">
+        <h2 class="h3">What you get</h2>
+        <ul class="ticks">
+          <li>An emailed quote: manufacturer, part number, OEM or labeled equivalent</li>
+          <li>Price and lead time, confirmed with the supplier</li>
+          <li>A payment link or invoice – nothing is charged on this site</li>
+          <li>Direct shipment from the supplier to your site</li>
+        </ul>
+      </div>
+    </div>
+    <figure class="sample" aria-labelledby="sample-cap">
+      <div class="sample-flag">Sample quote · example values only</div>
+      <figcaption id="sample-cap" class="visually-hidden">Sample quote layout with example values only, not an offer</figcaption>
+      <dl class="sample-dl">
+        <div><dt>Reference</dt><dd class="mono">SM-20261023-EXAMPLE</dd></div>
+        <div><dt>Part</dt><dd><span class="mono">XNXXSH2SS</span> · Honeywell XNX H₂S cartridge, 0–100 ppm</dd></div>
+        <div><dt>Match</dt><dd>Exact OEM part</dd></div>
+        <div><dt>Quantity</dt><dd class="mono">2</dd></div>
+        <div><dt>Unit price</dt><dd><span class="mono">$000.00</span> <span class="muted">(example – your quote shows the real price)</span></dd></div>
+        <div><dt>Lead time</dt><dd>Confirmed with supplier, e.g. <span class="mono">5–7</span> business days</dd></div>
+        <div><dt>Shipping</dt><dd>Ships direct from supplier to your site, with tracking</dd></div>
+        <div><dt>Payment</dt><dd>Payment link or invoice, sent with the quote</dd></div>
+      </dl>
+    </figure>
   </div>
 </section>
 
@@ -227,13 +306,14 @@
         <li>Vibration sensor on motor: “Wi-care sensor on reciprocating motor”, Cedric Leturcq, <a href="https://commons.wikimedia.org/wiki/File:Wi-care_sensor_on_reciprocating_motor.png" rel="nofollow">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="nofollow">CC BY-SA 4.0</a> (resized).</li>
         <li>Fixed gas monitor: “Gas Detector- Fixed Gas Monitor”, Snwboarder45, <a href="https://commons.wikimedia.org/wiki/File:Gas_Detector-_Fixed_Gas_Monitor.jpg" rel="nofollow">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="nofollow">CC BY-SA 4.0</a> (resized).</li>
         <li>Gas sensor cell: “Gas-Sensor”, Drahkrub, <a href="https://commons.wikimedia.org/wiki/File:Gas-Sensor.jpg" rel="nofollow">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/" rel="nofollow">CC BY-SA 3.0</a> (resized).</li>
-        <li>Refrigerant module illustration and logo: original artwork.</li>
+        <li>Hero photo: “Wesseling Refinery at Dusk, March 2018”, Martin Falbisoner, <a href="https://commons.wikimedia.org/wiki/File:Wesseling_Refinery_at_Dusk,_March_2018.jpg" rel="nofollow">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="nofollow">CC BY-SA 4.0</a> (resized, darkened with overlay).</li>
+        <li>Refrigerant module illustration, blueprint drawing and logo: original artwork.</li>
       </ul>
     </details>
     <p class="small">© <span id="yr">2026</span> SensorMarketplace.com</p>
   </div>
 </footer>
 <a class="sticky-cta js-quote" href="#quote" id="stickyCta" hidden>Get a quote by part number</a>
-<script src="main.js?v=202610231305" defer></script>
+<script src="main.js?v=202610231313" defer></script>
 </body>
 </html>

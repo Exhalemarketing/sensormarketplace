@@ -37,7 +37,7 @@
     toggle('countryOtherWrap', 'countryOther', other);
   }
   $('country').addEventListener('change', function () { syncStates(); if (v('country') === 'Other') $('countryOther').focus(); });
-  syncStates();
+  if (v('country')) syncStates();   // initial state is set in the HTML (state select disabled)
 
   /* ---- smart defaults from well-known part-number prefixes (only fills empty fields) ---- */
   var PREFIX = [
@@ -162,6 +162,6 @@
   window.addEventListener('pageshow', function () {
     sending = false; btn.disabled = false; btn.textContent = BTN_TXT; btn.removeAttribute('aria-busy');
     f.querySelectorAll('[disabled]').forEach(function (el) { if (el !== stateSel) el.disabled = false; });
-    syncStates();
+    if (v('country')) syncStates(); else stateSel.disabled = true;
   });
 })();
