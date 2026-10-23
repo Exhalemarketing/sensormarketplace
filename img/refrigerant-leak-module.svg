@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" font-family="Arial,Helvetica,sans-serif">
+<defs><pattern id="g" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#dfe6ec" stroke-width="1"/></pattern>
+<linearGradient id="b" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7f9fb"/><stop offset="1" stop-color="#d9e1e8"/></linearGradient></defs>
+<rect width="600" height="600" fill="#eef2f5"/><rect width="600" height="600" fill="url(#g)"/>
+<!-- pipe -->
+<rect x="0" y="470" width="600" height="38" fill="#9aa9b6"/><rect x="0" y="470" width="600" height="8" fill="#c4ced7"/>
+<!-- enclosure -->
+<rect x="150" y="90" width="300" height="300" rx="18" fill="url(#b)" stroke="#0A2540" stroke-width="5"/>
+<rect x="150" y="90" width="300" height="52" rx="18" fill="#0A2540"/><rect x="150" y="124" width="300" height="18" fill="#0A2540"/>
+<text x="300" y="124" fill="#F97316" font-size="22" font-weight="700" text-anchor="middle" letter-spacing="3">REFRIGERANT</text>
+<!-- display -->
+<rect x="190" y="165" width="220" height="90" rx="8" fill="#0b1823"/>
+<text x="300" y="215" fill="#7CFFB0" font-size="40" font-family="Courier New,monospace" font-weight="700" text-anchor="middle">0 ppm</text>
+<text x="300" y="242" fill="#7f98ad" font-size="16" text-anchor="middle">R-454B · A2L</text>
+<!-- leds -->
+<circle cx="215" cy="290" r="11" fill="#1b9e5a"/><circle cx="260" cy="290" r="11" fill="#F97316"/><circle cx="305" cy="290" r="11" fill="#d0362c"/>
+<text x="215" y="322" font-size="13" text-anchor="middle" fill="#4A5568">PWR</text><text x="260" y="322" font-size="13" text-anchor="middle" fill="#4A5568">A1</text><text x="305" y="322" font-size="13" text-anchor="middle" fill="#4A5568">A2</text>
+<text x="395" y="300" font-size="15" text-anchor="middle" fill="#0A2540" font-weight="700">4-20 mA</text><text x="395" y="320" font-size="13" text-anchor="middle" fill="#4A5568">Modbus</text>
+<!-- screws -->
+<g fill="#9aa9b6"><circle cx="172" cy="370" r="6"/><circle cx="428" cy="370" r="6"/></g>
+<!-- sensor head -->
+<rect x="262" y="390" width="76" height="34" fill="#4A5568"/><rect x="250" y="424" width="100" height="26" rx="6" fill="#0A2540"/>
+<g stroke="#9aa9b6" stroke-width="3"><line x1="262" y1="437" x2="338" y2="437"/></g>
+<!-- cable gland -->
+<rect x="450" y="205" width="40" height="30" fill="#4A5568"/><path d="M490 220 C540 220 560 260 560 300 L560 470" fill="none" stroke="#0A2540" stroke-width="10"/>
+<!-- gas wisps -->
+<g fill="none" stroke="#0b6e99" stroke-width="4" stroke-linecap="round" opacity=".7"><path d="M80 460 c10-20-10-30 0-50 s-10-30 0-50"/><path d="M110 466 c10-20-10-30 0-50 s-10-30 0-50"/></g>
+<text x="300" y="560" font-size="16" text-anchor="middle" fill="#4A5568">Illustration – refrigerant leak-detection module</text>
+</svg>

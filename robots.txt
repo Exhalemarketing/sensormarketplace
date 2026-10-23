@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://exhalemarketing.github.io/sensormarketplace/sitemap.xml
